@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+:root{
+    --cor0: hsl(233, 47%, 7%); /*main background*/
+    --cor1: hsl(244, 38%, 16%); /*card background*/
+    --cor2: hsl(277, 64%, 61%); /*highlight*/
+    --cor3: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+    --cor4: hsla(0, 0%, 100%, 0.6); /*stats headings*/
+    --font0: 'Inter';
+    --font1: 'Lexend Deca';
+}
+
+body{
+    background-color: var(--cor0);
+}
+
+div.container{
+    background-color: var(--cor1);
+    width: 100%;
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+    
+
+}
+h1{
+    color: white;
+    font-family: var(--font0);
+    padding: 20px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+h1 > strong{
+    color: var(--cor2);
+}
+
+p{
+    font-family: var(--font0);
+    font-weight: 400;
+    color :var(--cor3);
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+    
+}
+
+div.photo{
+    background-color: var(--cor2);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 275px;
+}
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: var(--cor2);
+    opacity: 0.7;
+
+}
+
+div.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.div1{
+    color: white;
+    font-family: var(--font1);
+    margin-bottom: 5px;
+}
+.div2{
+    color: white;
+    font-family: var(--font1);
+    margin-bottom: 5px;
+}
+.div3{
+    color: white;
+    font-family: var(--font1);
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+footer{
+    color: white;
+    text-align: center;
+}
+
+a:hover{
+    color: var(--cor4);
+}
+
+@media(min-width:700px) {
+    .container{
+        display: flex;
+        flex-direction: row-reverse;
+
+
+        
+    }
+
+    .flex{
+        display: flex;
+    }
+}

@@ -18,10 +18,8 @@ body{
 
 div.container{
     background-color: var(--cor1);
-    width: 100%;
     margin-top: 60px;
-    margin-left: 20px;
-    margin-right: 20px;
+
     border-radius: 10px;
     
 
@@ -51,6 +49,7 @@ div.photo{
     background-color: var(--cor2);
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    width: 375px;
     height: 275px;
 }
 img{
@@ -100,12 +99,44 @@ a:hover{
     .container{
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
+        margin: auto;
+    
+    
 
+        
+        width: 1000px;
+  
+    }
+
+    img{
+        border-top-right-radius: 10px;
+        border-top-left-radius: 0px;
+        border-bottom-right-radius: 10px;
+    }
+
+    h1{
+        padding: 5px;
+        margin: 5px;
+    }
+
+    p{
+        text-align: justify;
+    }
+    div.photo{
+        width: 540px;
+        height: 446px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    div.info{
+        flex-direction: row;
+        justify-content: space-evenly;
 
         
     }
 
-    .flex{
-        display: flex;
-    }
+
 }
